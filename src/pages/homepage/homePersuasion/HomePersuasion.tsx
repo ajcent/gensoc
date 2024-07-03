@@ -20,7 +20,7 @@ function HomePersuasion() {
             <Box pos="relative" className="persuation-item">
               <AspectRatio ratio={16 / 9}>
                 <Image
-                  src="./public/homepage/Organizations/Gabriela/Grabiela.jpg"
+                  src="https://github.com/ajcent/gensoc/blob/main/public/homepage/Organizations/Gabriela/Grabiela.jpg?raw=true"
                   h="100%"
                 />
               </AspectRatio>
@@ -39,7 +39,7 @@ function HomePersuasion() {
 
             <Box pos="relative" className="persuation-item">
               <AspectRatio ratio={16 / 9}>
-                <Image src="./public/homepage/Organizations/Girlup/girlup.png" />
+                <Image src="https://github.com/ajcent/gensoc/blob/main/public/homepage/Organizations/GirlUp/girlup.png?raw=true" />
               </AspectRatio>
               <Box
                 component="div"
@@ -61,7 +61,7 @@ function HomePersuasion() {
           <Stack className="persuation-grid__item__stack">
             <Box pos="relative" className="persuation-item">
               <AspectRatio ratio={16 / 9}>
-                <Image src="./public/homepage/Organizations/HRW/hrw.webp" />
+                <Image src="https://raw.githubusercontent.com/ajcent/gensoc/main/public/homepage/Organizations/HRW/hrw.webp" />
               </AspectRatio>
               <Box
                 component="div"
@@ -78,7 +78,7 @@ function HomePersuasion() {
 
             <Box pos="relative" className="persuation-item">
               <AspectRatio ratio={16 / 9}>
-                <Image src="./public/homepage/Organizations/Akbayan/Akbayan (2).jpg" />
+                <Image src="https://github.com/ajcent/gensoc/blob/main/public/homepage/Organizations/Akbayan/Akbayan%20(2).jpg?raw=true" />
               </AspectRatio>
               <Box
                 component="div"
