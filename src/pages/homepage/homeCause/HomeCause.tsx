@@ -1,4 +1,4 @@
-import { Box, Center, Grid, Paper, Stack, Text } from "@mantine/core";
+import { Center, Grid, Paper, Stack, Text } from "@mantine/core";
 import "./HomeCause.css";
 import getPaddingResponsive from "../../../utils/getPaddingResponsive";
 import TextOnImage from "../../../components/textOnImage/TextOnImage";

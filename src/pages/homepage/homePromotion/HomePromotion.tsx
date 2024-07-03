@@ -1,4 +1,4 @@
-import { Group, SimpleGrid } from "@mantine/core";
+import { SimpleGrid } from "@mantine/core";
 import PromotionCard from "../../../components/promotionCard/PromotionCard";
 import "./HomePromotion.css";
 

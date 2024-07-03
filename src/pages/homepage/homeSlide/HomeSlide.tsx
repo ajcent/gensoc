@@ -7,11 +7,9 @@ import { Center, Text } from "@mantine/core";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Paper } from "@mantine/core";
-import getPaddingResponsive from "../../../utils/getPaddingResponsive";
 
 function HomeSlide() {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
-  const paddingResponsive = getPaddingResponsive();
 
   return (
     <Paper component="section" radius={0} id="hero">

@@ -1,5 +1,5 @@
 import { Button, List } from "@mantine/core";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./NavigationBar.css";
 import getPaddingResponsive from "../../utils/getPaddingResponsive";
 import BrandName from "../brandname/BrandName";
