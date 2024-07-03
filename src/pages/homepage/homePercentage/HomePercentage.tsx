@@ -39,7 +39,7 @@ function HomePercentage() {
         className="home-percentage__picture"
       >
         <Image
-          src={"./public/homepage/paygap.png"}
+          src={"public/homepage/paygap.png"}
           display="inline-block"
           h="100%"
         />
