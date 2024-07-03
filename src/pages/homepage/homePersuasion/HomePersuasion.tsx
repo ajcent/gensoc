@@ -32,7 +32,7 @@ function HomePersuasion() {
                 <Image
                   display="inline-block"
                   height="50%"
-                  src="./public/homepage/Organizations/Gabriela/Gabriela_Overlay.webp"
+                  src="https://raw.githubusercontent.com/ajcent/gensoc/main/public/homepage/Organizations/Gabriela/Gabriela_Overlay.webp"
                 />
               </Box>
             </Box>
@@ -53,7 +53,7 @@ function HomePersuasion() {
             <Box className="persuation-item middle" h="100%">
               <Image
                 h="100%"
-                src="./public/homepage/Organizations/middle.jpg"
+                src="https://github.com/ajcent/gensoc/blob/main/public/homepage/Organizations/middle.jpg?raw=true"
               />
             </Box>
           </Stack>
@@ -71,7 +71,7 @@ function HomePersuasion() {
                 <Image
                   display="inline-block"
                   height="60%"
-                  src="./public/homepage/Organizations/HRW/hrw_overlay.jpg"
+                  src="https://github.com/ajcent/gensoc/blob/main/public/homepage/Organizations/HRW/hrw_overlay.jpg?raw=true"
                 />
               </Box>
             </Box>
