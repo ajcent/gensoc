@@ -18,11 +18,7 @@ function HomeDonation() {
   return (
     <Paper component="section" id="home-donation">
       <Box h={370} pos="relative">
-        <BackgroundImage
-          className=""
-          h="100%"
-          src="public/homepage/donation.jpeg"
-        >
+        <BackgroundImage className="home-donation__image" h="100%" src="">
           <Stack p="md" h="100%" justify="space-between">
             <Group justify="flex-end">
               <UnwomenLogo />
