@@ -1,4 +1,4 @@
-import { Button, List } from "@mantine/core";
+import { Button, List, Image, Flex, AspectRatio, Group } from "@mantine/core";
 import { Link } from "react-router-dom";
 import "./NavigationBar.css";
 import getPaddingResponsive from "../../utils/getPaddingResponsive";
@@ -8,9 +8,16 @@ function NavigationBar() {
   const paddingResponsive = getPaddingResponsive();
 
   return (
-    <List id="navigation" px={paddingResponsive} py="md">
+    <List id="navigation" px={paddingResponsive} py="xs">
       <List.Item>
-        <BrandName size="md" />
+        <Flex align="center">
+          <Image
+            src="https://github.com/ajcent/gensoc/blob/main/public/homepage/logo.png?raw=true"
+            w="35px"
+            mr="md"
+          />
+          <BrandName size="md" />
+        </Flex>
       </List.Item>
       <List.Item visibleFrom="md">
         <Link to="education" className="link">
