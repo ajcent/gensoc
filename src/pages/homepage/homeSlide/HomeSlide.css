@@ -5,3 +5,8 @@
 .carousel-text {
   font-size: clamp(1.25rem, 1.5vw + 0.75rem, 3rem);
 }
+
+.hero-carousel {
+  background-color: var(--color-main-black);
+  color: var(--color-main-white);
+}

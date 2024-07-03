@@ -22,6 +22,7 @@ function HomeSlide() {
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
           loop
+          className="hero-carousel"
         >
           <Carousel.Slide>
             <Center h="100%">
