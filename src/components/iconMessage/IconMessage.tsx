@@ -1,5 +1,4 @@
 import { Stack, ThemeIcon, Text } from "@mantine/core";
-import { FaBalanceScale } from "react-icons/fa";
 
 interface IconMessageProps {
   icon: React.ReactNode;
