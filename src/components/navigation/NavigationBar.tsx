@@ -1,10 +1,13 @@
-import { Button, List, Image, Flex } from "@mantine/core";
+import { Button, List, Image, Flex, Burger } from "@mantine/core";
 import { Link } from "react-router-dom";
 import "./NavigationBar.css";
 import getPaddingResponsive from "../../utils/getPaddingResponsive";
 import BrandName from "../brandname/BrandName";
+import { useDisclosure } from "@mantine/hooks";
+import MobileNavigation from "../mobileNavigation/MobileNavigation";
 
 function NavigationBar() {
+  const [opened, { open, close }] = useDisclosure(false);
   const paddingResponsive = getPaddingResponsive();
 
   return (
@@ -47,10 +50,20 @@ function NavigationBar() {
         </Link>
       </List.Item>
 
-      <List.Item>
+      <List.Item visibleFrom="md">
         <Button variant="filled" color="black">
           Act Now
         </Button>
+      </List.Item>
+
+      <List.Item hiddenFrom="md">
+        <Burger
+          color="black"
+          opened={opened}
+          onClick={open}
+          aria-label="Toggle navigation"
+        />
+        <MobileNavigation opened={opened} close={close} />
       </List.Item>
     </List>
   );

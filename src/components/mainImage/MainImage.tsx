@@ -12,7 +12,12 @@ function MainImage(props: MainImageProps) {
   return (
     <BackgroundImage h="90vh" src={src}>
       <Center className="main-image__wrapper" h="100%" w="100%">
-        <Text className="main-image__content" fw={600} tt="uppercase">
+        <Text
+          className="main-image__content"
+          fw={600}
+          tt="uppercase"
+          ta="center"
+        >
           {header}
         </Text>
       </Center>
