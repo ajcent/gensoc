@@ -11,6 +11,7 @@ import "./HomeDonation.css";
 
 import UnwomenLogo from "../../../components/unwomenLogo/UnwomenLogo";
 import getPaddingResponsive from "../../../utils/getPaddingResponsive";
+import { IoSend } from "react-icons/io5";
 
 function HomeDonation() {
   const paddingResponsive = getPaddingResponsive();
@@ -51,9 +52,11 @@ function HomeDonation() {
                   color="blue"
                   miw="fit-content"
                 >
-                  <Text tt="uppercase" fw={700}>
-                    Donate
-                  </Text>
+                  <Button rightSection={<IoSend size={16} />}>
+                    <Text tt="uppercase" fw={700}>
+                      Donate
+                    </Text>
+                  </Button>
                 </Button>
               </Text>
             </Stack>

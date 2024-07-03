@@ -1,7 +1,10 @@
-import { Center, Grid, Paper, Stack, Text } from "@mantine/core";
+import { Button, Center, Grid, Paper, Stack, Text } from "@mantine/core";
 import "./HomeCause.css";
 import getPaddingResponsive from "../../../utils/getPaddingResponsive";
 import TextOnImage from "../../../components/textOnImage/TextOnImage";
+import { Link } from "react-router-dom";
+
+import { LuExternalLink } from "react-icons/lu";
 
 function HomeCause() {
   const paddingResponsive = getPaddingResponsive();
@@ -37,9 +40,17 @@ function HomeCause() {
               >
                 Education
               </Text>
-              <Text ta="center" fw={500}>
-                Learn more
-              </Text>
+              <Link to="education">
+                <Text ta="center" fw={500}>
+                  <Button
+                    rightSection={<LuExternalLink size={16} />}
+                    variant="transparent"
+                    className="cause-overlay__link"
+                  >
+                    Learn more
+                  </Button>
+                </Text>
+              </Link>
             </Stack>
           </Center>
         </Grid.Col>
@@ -63,9 +74,17 @@ function HomeCause() {
               >
                 Culture
               </Text>
-              <Text ta="center" fw={500}>
-                Learn more
-              </Text>
+              <Link to="culture">
+                <Text ta="center" fw={500}>
+                  <Button
+                    rightSection={<LuExternalLink size={16} />}
+                    variant="transparent"
+                    className="cause-overlay__link"
+                  >
+                    Learn more
+                  </Button>
+                </Text>
+              </Link>
             </Stack>
           </Center>
         </Grid.Col>
@@ -89,9 +108,17 @@ function HomeCause() {
               >
                 Workplace
               </Text>
-              <Text ta="center" fw={500}>
-                Learn more
-              </Text>
+              <Link to="workplace">
+                <Text ta="center" fw={500}>
+                  <Button
+                    rightSection={<LuExternalLink size={16} />}
+                    variant="transparent"
+                    className="cause-overlay__link"
+                  >
+                    Learn more
+                  </Button>
+                </Text>
+              </Link>
             </Stack>
           </Center>
         </Grid.Col>
@@ -115,9 +142,17 @@ function HomeCause() {
               >
                 Relationship
               </Text>
-              <Text ta="center" fw={500}>
-                Learn more
-              </Text>
+              <Link to="relationship">
+                <Text ta="center" fw={500}>
+                  <Button
+                    rightSection={<LuExternalLink size={16} />}
+                    variant="transparent"
+                    className="cause-overlay__link"
+                  >
+                    Learn more
+                  </Button>
+                </Text>
+              </Link>
             </Stack>
           </Center>
         </Grid.Col>
@@ -141,9 +176,17 @@ function HomeCause() {
               >
                 Politics
               </Text>
-              <Text ta="center" fw={500}>
-                Learn more
-              </Text>
+              <Link to="politics">
+                <Text ta="center" fw={500}>
+                  <Button
+                    rightSection={<LuExternalLink size={16} />}
+                    variant="transparent"
+                    className="cause-overlay__link"
+                  >
+                    Learn more
+                  </Button>
+                </Text>
+              </Link>
             </Stack>
           </Center>
         </Grid.Col>

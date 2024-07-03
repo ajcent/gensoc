@@ -38,3 +38,12 @@
   background-color: rgba(100, 149, 237, 0.85);
   opacity: 1;
 }
+
+.cause-overlay__link {
+  color: rgba(16, 16, 16, 0.8);
+}
+
+.cause-overlay__link:hover {
+  color: rgba(16, 16, 16, 0.8);
+  text-decoration: underline;
+}
