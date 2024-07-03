@@ -15,6 +15,8 @@ function HomeSlide() {
     <Paper component="section" radius={0} id="hero">
       <div style={{ height: "100%", width: "100%", display: "flex" }}>
         <Carousel
+          withControls={false}
+          draggable={false}
           withIndicators
           height="100%"
           w="100%"
@@ -22,7 +24,7 @@ function HomeSlide() {
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
           loop
-          className="hero-carousel"
+          className="hero-carousel no-select"
         >
           <Carousel.Slide>
             <Center h="100%">
