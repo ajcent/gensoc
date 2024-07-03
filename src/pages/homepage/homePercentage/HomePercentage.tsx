@@ -25,7 +25,7 @@ function HomePercentage() {
         <Center className="home-percentage__content__wrapper" mb="-7rem">
           <Text className="home-percentage__content" size="xl">
             Is the gender pay gap or {width <= 780 && <Box component="br" />}{" "}
-            annual average salary of $15, 457
+            annual average salary of $15,457
           </Text>
         </Center>
         <Center>
@@ -39,7 +39,7 @@ function HomePercentage() {
         className="home-percentage__picture"
       >
         <Image
-          src={"public/homepage/paygap.png"}
+          src="https://raw.githubusercontent.com/ajcent/gensoc/main/public/homepage/paygap.png"
           display="inline-block"
           h="100%"
         />
