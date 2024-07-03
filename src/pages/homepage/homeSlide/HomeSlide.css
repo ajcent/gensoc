@@ -1,0 +1,7 @@
+#hero {
+  height: 80vh;
+}
+
+.carousel-text {
+  font-size: clamp(1.25rem, 1.5vw + 0.75rem, 3rem);
+}

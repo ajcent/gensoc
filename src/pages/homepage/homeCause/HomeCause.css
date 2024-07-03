@@ -1,0 +1,40 @@
+.home-cause {
+  background-color: var(--color-main-white);
+}
+
+.cause-overlay {
+  top: 0;
+  left: 0;
+  width: calc(100% - 16px) !important;
+  height: calc(100% - 16px) !important;
+  translate: 8px 8px;
+  color: var(--color-main-black);
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.cause-overlay:hover.education {
+  background-color: rgba(200, 0, 54, 0.85);
+  opacity: 1;
+}
+
+.cause-overlay:hover.culture {
+  background-color: rgba(64, 165, 120, 0.85);
+  opacity: 1;
+}
+
+.cause-overlay:hover.workplace {
+  background-color: rgba(123, 211, 234, 0.85);
+  opacity: 1;
+}
+
+.cause-overlay:hover.relationship {
+  background-color: rgba(155, 134, 189, 0.85);
+  opacity: 1;
+}
+
+.cause-overlay:hover.politics {
+  background-color: rgba(100, 149, 237, 0.85);
+  opacity: 1;
+}

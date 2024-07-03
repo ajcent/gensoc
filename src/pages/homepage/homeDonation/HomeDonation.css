@@ -1,0 +1,9 @@
+#home-donation .mantine-BackgroundImage-root {
+  background-repeat: no-repeat;
+  background-position: 50% 78%;
+  background-image: linear-gradient(
+      rgba(60, 60, 60, 0.6),
+      rgba(60, 60, 60, 0.6)
+    ),
+    url("public/homepage/donation.jpeg") !important;
+}

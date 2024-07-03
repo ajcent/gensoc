@@ -1,0 +1,5 @@
+.unwomen-logo {
+  fill: #00b2ff;
+  width: clamp(6rem, 25%, 10rem);
+  opacity: 0.8;
+}

@@ -1,0 +1,10 @@
+.card {
+  background-color: var(--color-main-white);
+  box-shadow: 5px 5px 38px -10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 38px -10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 38px -10px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  color: var(--color-main-black);
+}
