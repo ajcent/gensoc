@@ -22,6 +22,7 @@ function HomeSlide() {
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
           loop
+          style={{ backgroundColor: "red" }}
         >
           <Carousel.Slide>
             <Center h="100%">
