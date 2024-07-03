@@ -26,7 +26,7 @@ function HomeDonation() {
             </Group>
             <Stack
               px={paddingResponsive}
-              gap="md"
+              gap="lg"
               style={{
                 position: "absolute",
                 top: 0,
@@ -38,7 +38,7 @@ function HomeDonation() {
               }}
             >
               <Text
-                className="main-text"
+                className="main-text home-donation__main-text"
                 tt="uppercase"
                 size="2.65rem"
                 fw={600}

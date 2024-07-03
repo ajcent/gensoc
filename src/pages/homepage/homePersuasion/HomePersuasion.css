@@ -1,5 +1,5 @@
 #home-persuasion {
-  background-color: var(--color-sub-white);
+  background-color: rgba(177, 175, 255, 0.2);
 }
 
 .persuation-grid {
@@ -40,7 +40,7 @@
     circle,
     rgba(22, 22, 22, 0.6474964985994398) 0%,
     rgba(22, 22, 22, 0.45702030812324934) 16%,
-    rgba(22, 22, 22, 0.053658963585434205) 45%,
+    rgba(22, 22, 22, 0.053658963585434205) 30%,
     rgba(22, 22, 22, 0) 69%
   );
 }

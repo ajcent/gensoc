@@ -91,7 +91,12 @@ function HomePersuasion() {
           </Stack>
         </Box>
       </Group>
-      <Stack gap={0} pos="absolute" className="home-persuasion__main-text">
+      <Stack
+        gap={0}
+        pos="absolute"
+        className="home-persuasion__main-text"
+        style={{ zIndex: 1 }}
+      >
         <Text tt="uppercase" className="title" fw={700}>
           Join The Movement
         </Text>
