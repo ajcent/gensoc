@@ -1,28 +1,28 @@
 import "./App.css";
 import "@mantine/core/styles.css";
 
-import NavigationBar from "./components/navigation/NavigationBar";
+import { Route, Routes } from "react-router-dom";
 
-import HomeSlide from "./pages/homepage/homeSlide/HomeSlide";
-import HomePromotion from "./pages/homepage/homePromotion/HomePromotion";
-import HomeCause from "./pages/homepage/homeCause/HomeCause";
-import HomeDonation from "./pages/homepage/homeDonation/HomeDonation";
-import HomePersuasion from "./pages/homepage/homePersuasion/HomePersuasion";
-import Footer from "./components/footer/Footer";
-import HomePercentage from "./pages/homepage/homePercentage/HomePercentage";
+import Homepage from "./pages/homepage/Homepage.tsx";
+import PageLayout from "./pages/PageLayout.tsx";
+import Education from "./pages/education/Education.tsx";
+import Culture from "./pages/culture/Culture.tsx";
+import Politics from "./pages/politics/Politics.tsx";
+import Relationship from "./pages/relationship/Realtionship.tsx";
+import Workplace from "./pages/workplace/Workplace.tsx";
 
 function App() {
   return (
-    <>
-      <NavigationBar />
-      <HomeSlide />
-      <HomePromotion />
-      <HomePercentage />
-      <HomeCause />
-      <HomeDonation />
-      <HomePersuasion />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<PageLayout />}>
+        <Route index element={<Homepage />} />
+        <Route path="education" element={<Education />} />
+        <Route path="culture" element={<Culture />} />
+        <Route path="politics" element={<Politics />} />
+        <Route path="relationship" element={<Relationship />} />
+        <Route path="workplace" element={<Workplace />} />
+      </Route>
+    </Routes>
   );
 }
 
