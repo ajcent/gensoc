@@ -29,7 +29,6 @@ function HomeSlide() {
                 className="carousel-text"
                 px={{ md: "5rem", base: "3rem" }}
                 ta="center"
-                style={{ backgroundColor: "red" }}
               >
                 Your gender influence your experience at crisis, healthcare,
                 relationship, politics, and more. It encompass everything.
