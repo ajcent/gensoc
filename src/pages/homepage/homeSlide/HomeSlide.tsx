@@ -22,7 +22,6 @@ function HomeSlide() {
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
           loop
-          style={{ backgroundColor: "red" }}
         >
           <Carousel.Slide>
             <Center h="100%">
@@ -30,6 +29,7 @@ function HomeSlide() {
                 className="carousel-text"
                 px={{ md: "5rem", base: "3rem" }}
                 ta="center"
+                style={{ backgroundColor: "red" }}
               >
                 Your gender influence your experience at crisis, healthcare,
                 relationship, politics, and more. It encompass everything.
