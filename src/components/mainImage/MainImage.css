@@ -1,0 +1,15 @@
+.main-image__content {
+  font-size: clamp(1.75rem, 3vw + 1rem, 4rem);
+  color: var(--color-main-white);
+}
+
+.main-image__wrapper {
+  background: rgb(22, 22, 22);
+  background: linear-gradient(
+    0deg,
+    rgba(22, 22, 22, 0.6474964985994398) 0%,
+    rgba(22, 22, 22, 0.6166841736694677) 8%,
+    rgba(22, 22, 22, 0.053658963585434205) 60%,
+    rgba(22, 22, 22, 0) 70%
+  );
+}
