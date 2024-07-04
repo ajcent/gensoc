@@ -15,7 +15,6 @@ function Homepage() {
       <HomeCause />
       <HomeDonation />
       <HomePersuasion />
-      <Footer />
     </div>
   );
 }

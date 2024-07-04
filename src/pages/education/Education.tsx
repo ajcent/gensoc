@@ -16,9 +16,15 @@ import { FaBalanceScale } from "react-icons/fa";
 import HoverCard from "../../components/hoverCard/HoverCard";
 import getPaddingResponsive from "../../utils/getPaddingResponsive";
 import { BarChart } from "@mantine/charts";
+import { useViewportSize } from "@mantine/hooks";
+import { Carousel } from "@mantine/carousel";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 function Education() {
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
   const paddingResponsive = getPaddingResponsive();
+  const { width } = useViewportSize();
 
   return (
     <Paper
@@ -46,48 +52,6 @@ function Education() {
         </Group>
       </Center>
 
-      <Stack px={paddingResponsive} py="4rem">
-        <Center>
-          <Text className="main-text-size" fw={500} pb="xs" tt="uppercase">
-            What It Really Is
-          </Text>
-        </Center>
-        <Box component="div" className="education-needs">
-          <IconMessage
-            subheading="Unequal Opportunity"
-            content="Inclusion of gender perspectives in curriculum and teaching methods."
-            icon={<FaBalanceScale size={30} />}
-          />
-          <IconMessage
-            subheading="Policies and Practices"
-            content="Promote gender equality, address stereotypes, and ensure all students have a fair chance to thrive academically and socially."
-            icon={<FaBalanceScale size={30} />}
-          />
-          <IconMessage
-            subheading="Gender-Inclusive Approach"
-            content="Fosters a more equitable society by empowering individuals to break barriers and contribute fully to their communities."
-            icon={<FaBalanceScale size={30} />}
-          />
-        </Box>
-      </Stack>
-
-      <Box className="education-banner" py="5rem">
-        <Group grow px={paddingResponsive} gap="xl">
-          <Box className="education-banner-image" w="50%">
-            <AspectRatio ratio={16 / 9} w="100%">
-              <Image src="https://github.com/ajcent/gensoc/blob/main/public/education/education_equality.jpg?raw=true" />
-            </AspectRatio>
-          </Box>
-          <Center>
-            <Text ta="center">
-              Gender disparity in education persists due to various factors such
-              as societal norms, and discrimination based on gender identity and
-              sexual orientation.
-            </Text>
-          </Center>
-        </Group>
-      </Box>
-
       <Stack
         py="5rem"
         px={paddingResponsive}
@@ -95,12 +59,6 @@ function Education() {
         gap="xl"
         opacity={0.7}
       >
-        <Center>
-          <Text ta="center">
-            LGBTQ+ students frequently hearing homophobic comments from staff
-            and negative remarks about gender expression.
-          </Text>
-        </Center>
         <BarChart
           w="content"
           h={300}
@@ -119,6 +77,139 @@ function Education() {
           series={[{ name: "Count", color: "violet.6" }]}
           tickLine="y"
         />
+
+        <Center>
+          <Text ta="center">
+            LGBTQ+ students frequently hearing homophobic comments from staff
+            and negative remarks about gender expression.
+          </Text>
+        </Center>
+      </Stack>
+
+      <Stack
+        className="education-banner"
+        px={paddingResponsive}
+        py="5rem"
+        gap="xl"
+      >
+        <Group grow gap="xl">
+          <Box className="education-banner-image" w="50%">
+            <AspectRatio ratio={16 / 9} w="100%">
+              <Image src="https://github.com/ajcent/gensoc/blob/main/public/education/education_equality.jpg?raw=true" />
+            </AspectRatio>
+          </Box>
+          {width > 700 && (
+            <Center>
+              <Text ta="center">
+                Gender disparity in education persists due to various factors
+                such as societal norms, and discrimination based on gender
+                identity and sexual orientation.
+              </Text>
+            </Center>
+          )}
+        </Group>
+        {width <= 700 && (
+          <Center>
+            <Text ta="center">
+              Gender disparity in education persists due to various factors such
+              as societal norms, and discrimination based on gender identity and
+              sexual orientation.
+            </Text>
+          </Center>
+        )}
+      </Stack>
+
+      <Stack className="education-carousel">
+        <Carousel
+          withControls={false}
+          draggable={false}
+          withIndicators
+          height="15rem"
+          w="100%"
+          plugins={[autoplay.current]}
+          onMouseEnter={autoplay.current.stop}
+          onMouseLeave={autoplay.current.reset}
+          loop
+          className="no-select"
+        >
+          <Carousel.Slide c="white">
+            <Center h="100%">
+              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
+                <Text size="xl" fw={500} ta="center">
+                  Historical Legacies
+                </Text>
+                <Center>
+                  <Text>
+                    Long-standing societal biases and inequalities continue to
+                    influence current attitudes and structures.
+                  </Text>
+                </Center>
+              </Stack>
+            </Center>
+          </Carousel.Slide>
+
+          <Carousel.Slide c="white">
+            <Center h="100%">
+              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
+                <Text size="xl" fw={500} ta="center">
+                  Historical Legacies
+                </Text>
+                <Center>
+                  <Text>
+                    Long-standing societal biases and inequalities continue to
+                    influence current attitudes and structures.
+                  </Text>
+                </Center>
+              </Stack>
+            </Center>
+          </Carousel.Slide>
+
+          <Carousel.Slide c="white">
+            <Center h="100%">
+              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
+                <Text size="xl" fw={500} ta="center">
+                  Historical Legacies
+                </Text>
+                <Center>
+                  <Text>
+                    Long-standing societal biases and inequalities continue to
+                    influence current attitudes and structures.
+                  </Text>
+                </Center>
+              </Stack>
+            </Center>
+          </Carousel.Slide>
+        </Carousel>
+      </Stack>
+
+      <Stack px={paddingResponsive} py="4rem">
+        <Center>
+          <Text className="main-text-size" fw={500} pb="xs" tt="uppercase">
+            Make A Change
+          </Text>
+        </Center>
+        <Box component="div" className="education-needs">
+          <IconMessage
+            subheading="Lead by Example"
+            content="Challenge gender stereotypes and support gender equality in your everyday life. Encourage others to do the same."
+            icon={<FaBalanceScale size={30} />}
+          />
+          <IconMessage
+            subheading="Raise Awareness"
+            content="Use social media, blogs, and public speaking to highlight the importance of gender equality and access to education."
+            icon={<FaBalanceScale size={30} />}
+          />
+          <IconMessage
+            subheading="Support Legislation"
+            content="Advocate for laws and policies that promote gender equality in education. Write letters, sign petitions, and participate in rallies to support these causes."
+            icon={<FaBalanceScale size={30} />}
+          />
+          <IconMessage
+            subheading="Community Workshops"
+            content="Organize workshops that educate communities about the importance of gender equality in education and provide practical steps to support it."
+            icon={<FaBalanceScale size={30} />}
+          />
+        </Box>
       </Stack>
     </Paper>
   );

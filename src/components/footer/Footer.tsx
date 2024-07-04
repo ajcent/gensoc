@@ -1,56 +1,40 @@
 import "./Footer.css";
 
-import { Grid, Paper, Stack, Text } from "@mantine/core";
+import { Center, Stack, Text } from "@mantine/core";
 import BrandName from "../brandname/BrandName";
 import getPaddingResponsive from "../../utils/getPaddingResponsive";
-import { useViewportSize } from "@mantine/hooks";
-
-const minWidth: number = 850;
 
 function Footer() {
-  const { width } = useViewportSize();
   const paddingResponsive = getPaddingResponsive();
 
   return (
-    <Paper
+    <Stack
       id="footer"
       component="section"
       px={paddingResponsive}
-      radius={0}
       py="xl"
+      gap="sm"
     >
-      <Grid columns={width <= minWidth ? 2 : 5}>
-        <Grid.Col span={width <= minWidth ? 1 : 2}>
-          <Stack>
-            <BrandName size="xl" />
-          </Stack>
-        </Grid.Col>
-        <Grid.Col span={1} className="footer-topic">
-          <Stack>
-            <Text fw={700}>Topic</Text>
-            <Text>Page</Text>
-            <Text>Page</Text>
-            <Text>Page</Text>
-          </Stack>
-        </Grid.Col>
-        <Grid.Col span={1} className="footer-topic">
-          <Stack>
-            <Text fw={700}>Topic</Text>
-            <Text>Page</Text>
-            <Text>Page</Text>
-            <Text>Page</Text>
-          </Stack>
-        </Grid.Col>
-        <Grid.Col span={1} className="footer-topic">
-          <Stack>
-            <Text fw={700}>Topic</Text>
-            <Text>Page</Text>
-            <Text>Page</Text>
-            <Text>Page</Text>
-          </Stack>
-        </Grid.Col>
-      </Grid>
-    </Paper>
+      <Center>
+        <BrandName size="xl" />
+      </Center>
+
+      <Center>
+        <Text ta="center" size="sm">
+          Supporting gender equality helps create a fair and inclusive society
+          where everyone has the same opportunities and rights.
+        </Text>
+      </Center>
+
+      <Center pt="xl">
+        <Text ta="center" size="sm">
+          Designed and Created By{" "}
+          <Text component="span" inherit c="blue">
+            BSCS 3A
+          </Text>
+        </Text>
+      </Center>
+    </Stack>
   );
 }
 

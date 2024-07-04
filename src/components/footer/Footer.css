@@ -1,7 +1,8 @@
 #footer {
-  background-color: var(--color-main-white);
+  background-color: var(--color-main-black);
+  color: var(--color-sub-white);
 }
 
-.footer-topic {
-  color: var(--color-main-black);
+#footer h4 {
+  color: var(--color-main-white) !important;
 }
