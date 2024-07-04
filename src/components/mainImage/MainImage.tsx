@@ -1,3 +1,4 @@
+import getPaddingResponsive from "../../utils/getPaddingResponsive";
 import "./MainImage.css";
 import { BackgroundImage, Center, Text } from "@mantine/core";
 
@@ -8,10 +9,16 @@ interface MainImageProps {
 
 function MainImage(props: MainImageProps) {
   const { src, header } = props;
+  const paddingResponsive = getPaddingResponsive();
 
   return (
     <BackgroundImage h="90vh" src={src}>
-      <Center className="main-image__wrapper" h="100%" w="100%">
+      <Center
+        className="main-image__wrapper"
+        px={paddingResponsive}
+        h="100%"
+        w="100%"
+      >
         <Text
           className="main-image__content"
           fw={600}
