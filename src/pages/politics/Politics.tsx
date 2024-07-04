@@ -1,6 +1,6 @@
 import "./Politics.css";
 
-import { Paper, Box, Stack, Text, Center, Group, Flex } from "@mantine/core";
+import { Paper, Box, Stack, Text, Center, Group } from "@mantine/core";
 import MainImage from "../../components/mainImage/MainImage";
 
 import { FaBalanceScale } from "react-icons/fa";
