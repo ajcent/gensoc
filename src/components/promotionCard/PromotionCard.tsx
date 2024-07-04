@@ -5,17 +5,18 @@ interface PromotionCardProps {
   name: string;
   description: string;
   message: string;
+  src?: string;
 }
 
 function PromotionCard(props: PromotionCardProps) {
-  const { name, description, message } = props;
+  const { name, description, message, src } = props;
 
   return (
     <Card className="card">
       <Stack h="100%" justify="space-between">
         <Text className="text">{message}</Text>
         <Flex align="center" gap="xs">
-          <Avatar variant="filled" radius="xl" size="lg" src="" />
+          <Avatar variant="filled" radius="xl" size="lg" src={src} />
           <Stack gap="0">
             <Text className="text" fw={600}>
               {name}

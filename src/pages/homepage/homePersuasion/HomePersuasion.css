@@ -1,12 +1,12 @@
 #home-persuasion {
   background-color: rgba(177, 175, 255, 0.2);
+  padding: 4rem clamp(1rem, 2vw, 3rem);
 }
 
 .persuation-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(1rem, 2vw, 3rem);
-  padding: clamp(1rem, 2vw, 3rem);
 }
 
 .persuation-item__overlay {
@@ -45,21 +45,13 @@
   );
 }
 
-.home-persuasion__main-text .title {
-  font-size: clamp(1.75rem, 2vw + 1rem, 3rem);
-}
-
-.home-persuasion__main-text .content {
-  font-size: clamp(0.8rem, 1vw, 1.2rem);
-}
-
 @media (max-width: 600px) {
   .persuation-grid,
   .persuation-grid__item__stack {
     gap: 0.5rem;
   }
 
-  .persuation-grid {
-    padding: 0.5rem;
+  #home-persuasion {
+    padding: 2.5rem 0.5rem;
   }
 }

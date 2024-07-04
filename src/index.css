@@ -26,6 +26,14 @@ body {
   color: var(--color-main-white) !important;
 }
 
+.main-text-size {
+  font-size: clamp(1.75rem, 2vw + 1rem, 3rem);
+}
+
+.sub-text-size {
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+}
+
 .sub-text {
   color: var(--color-sub-white) !important;
 }

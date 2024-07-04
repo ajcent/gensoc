@@ -15,6 +15,18 @@ function HomePersuasion() {
   return (
     <Paper id="home-persuasion" component="section" radius={0} pos="relative">
       <Group>
+        <Center w="100%">
+          <Stack gap={0} style={{ zIndex: 1 }} pb="lg">
+            <Text tt="uppercase" className="main-text-size" fw={700}>
+              Join The Movement
+            </Text>
+            <Center>
+              <Text className="sub-text-size" opacity={0.7}>
+                Choose The Organization That Truly Acts
+              </Text>
+            </Center>
+          </Stack>
+        </Center>
         <Box component="div" className="persuation-grid">
           <Stack className="persuation-grid__item__stack">
             <Box pos="relative" className="persuation-item">
@@ -91,21 +103,6 @@ function HomePersuasion() {
           </Stack>
         </Box>
       </Group>
-      <Stack
-        gap={0}
-        pos="absolute"
-        className="home-persuasion__main-text"
-        style={{ zIndex: 1 }}
-      >
-        <Text tt="uppercase" className="title" fw={700}>
-          Join The Movement
-        </Text>
-        <Center>
-          <Text className="content">
-            Choose The Organization That Truly Acts
-          </Text>
-        </Center>
-      </Stack>
     </Paper>
   );
 }

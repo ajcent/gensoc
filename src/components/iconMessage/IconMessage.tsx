@@ -1,4 +1,4 @@
-import { Stack, ThemeIcon, Text } from "@mantine/core";
+import { Stack, ThemeIcon, Text, Flex } from "@mantine/core";
 
 interface IconMessageProps {
   icon: React.ReactNode;
@@ -10,7 +10,7 @@ function IconMessage(props: IconMessageProps) {
   const { icon, subheading, content } = props;
 
   return (
-    <Stack>
+    <Flex gap="md">
       <ThemeIcon size="xl" color="yellow">
         {icon}
       </ThemeIcon>
@@ -22,7 +22,7 @@ function IconMessage(props: IconMessageProps) {
           {content}
         </Text>
       </Stack>
-    </Stack>
+    </Flex>
   );
 }
 
