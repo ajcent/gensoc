@@ -23,7 +23,7 @@ function Relationship() {
 
       <Stack px={paddingResponsive} py="4rem">
         <Center>
-          <Text className="main-text-size" fw={500} pb="xl" tt="uppercase">
+          <Text className="main-text-size" fw={500} pb="xs" tt="uppercase">
             What It Really Is
           </Text>
         </Center>

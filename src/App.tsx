@@ -1,5 +1,6 @@
 import "./App.css";
 import "@mantine/core/styles.css";
+import "@mantine/charts/styles.css";
 
 import { Route, Routes } from "react-router-dom";
 

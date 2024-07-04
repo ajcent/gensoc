@@ -22,9 +22,24 @@ function Politics() {
         src="https://images.unsplash.com/photo-1633643333515-ef3727546bd4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
+      <Center pos="relative" px={paddingResponsive} pt="5rem" w="100%">
+        <Group w="100%" justify="center">
+          <HoverCard
+            src="https://th.bing.com/th/id/OIP.3Jq-GDG5pNl-MTl3QhieNwHaE7?rs=1&pid=ImgDetMain"
+            header="Oprah Winfrey"
+            content="“Education is the key to unlocking the world, a passport to freedom.”"
+          />
+          <HoverCard
+            src="https://th.bing.com/th/id/OIP.3Jq-GDG5pNl-MTl3QhieNwHaE7?rs=1&pid=ImgDetMain"
+            header="Pia Cayetano"
+            content="“Gender equality in education is not just about fairness, it is about empowering half of our population to contribute fully to society.”"
+          />
+        </Group>
+      </Center>
+
       <Stack px={paddingResponsive} py="4rem">
         <Center>
-          <Text className="main-text-size" fw={500} pb="xl" tt="uppercase">
+          <Text className="main-text-size" fw={500} pb="xs" tt="uppercase">
             What It Really Is
           </Text>
         </Center>
@@ -46,21 +61,6 @@ function Politics() {
           />
         </Box>
       </Stack>
-
-      <Center pos="relative" px={paddingResponsive} pb="5rem" w="100%">
-        <Group w="100%" justify="center">
-          <HoverCard
-            src="https://th.bing.com/th/id/OIP.3Jq-GDG5pNl-MTl3QhieNwHaE7?rs=1&pid=ImgDetMain"
-            header="Oprah Winfrey"
-            content="“Education is the key to unlocking the world, a passport to freedom.”"
-          />
-          <HoverCard
-            src="https://th.bing.com/th/id/OIP.3Jq-GDG5pNl-MTl3QhieNwHaE7?rs=1&pid=ImgDetMain"
-            header="Pia Cayetano"
-            content="“Gender equality in education is not just about fairness, it is about empowering half of our population to contribute fully to society.”"
-          />
-        </Group>
-      </Center>
     </Paper>
   );
 }
