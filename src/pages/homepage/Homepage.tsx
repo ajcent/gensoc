@@ -1,4 +1,3 @@
-import Footer from "../../components/footer/Footer";
 import HomeCause from "./homeCause/HomeCause";
 import HomeDonation from "./homeDonation/HomeDonation";
 import HomePercentage from "./homePercentage/HomePercentage";
