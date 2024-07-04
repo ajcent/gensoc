@@ -27,12 +27,7 @@ function Relationship() {
             What It Really Is
           </Text>
         </Center>
-        <Box
-          component="div"
-          px={paddingResponsive}
-          py="xl"
-          className="relationship-needs"
-        >
+        <Box component="div" className="relationship-needs">
           <IconMessage
             subheading="Role in Family"
             content="Men are expected to provide, and protect the family, while women are relegated to be the “light of the home” or caretakers of the family."
