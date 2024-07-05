@@ -45,7 +45,7 @@ function Relationship() {
             content="“LOVE has no gender, no religion, neither does it come with any conditions. In this world full of conditions, try to LOVE someone.”"
           />
           <HoverCard
-            src="public/relationship/akash.jpg"
+            src="https://github.com/ajcent/gensoc/blob/main/public/relationship/akash.jpg?raw=true"
             header="Akash Sarka"
             content="“Gender relationships, challenging for many, determine whether a society leans towards domination or partnership in all its relations.”"
           />
