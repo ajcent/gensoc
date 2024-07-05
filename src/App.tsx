@@ -8,9 +8,9 @@ import Homepage from "./pages/homepage/Homepage.tsx";
 import PageLayout from "./pages/PageLayout.tsx";
 import Education from "./pages/education/Education.tsx";
 import Culture from "./pages/culture/Culture.tsx";
-import Relationship from "./pages/relationship/Realtionship.tsx";
 import Workplace from "./pages/workplace/Workplace.tsx";
 import Politics from "./pages/politics/Politics.tsx";
+import Relationship from "./pages/relationship/Realtionship.tsx";
 
 function App() {
   return (

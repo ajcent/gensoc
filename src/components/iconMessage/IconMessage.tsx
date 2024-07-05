@@ -11,7 +11,7 @@ function IconMessage(props: IconMessageProps) {
 
   return (
     <Flex gap="md">
-      <ThemeIcon size="xl" color="yellow">
+      <ThemeIcon size="xl" color="green">
         {icon}
       </ThemeIcon>
       <Stack gap="4px">

@@ -108,7 +108,7 @@ function Relationship() {
                   <Text ta="center">
                     Weakens balanced relationships and prevents gender equality
                     because it stops partners from understanding and working
-                    together. fully.
+                    together fully.
                   </Text>
                 </Center>
               </Stack>
