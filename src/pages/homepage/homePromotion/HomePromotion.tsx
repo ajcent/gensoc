@@ -13,13 +13,13 @@ function HomePromotion() {
     <section id="hero-promotion">
       <SimpleGrid cols={gridResponsive} px={paddingResponsive}>
         <PromotionCard
-          src="public/homepage/emma_watson.jpg"
+          src="https://github.com/ajcent/gensoc/blob/main/public/homepage/emma_watson.jpg?raw=true"
           name="Emma Watson"
           description="English Actress"
           message="“Men—I would like to take this opportunity to extend your formal invitation. Gender equality is your issue too.”"
         />
         <PromotionCard
-          src="public/homepage/vice_ganda.jpg"
+          src="https://github.com/ajcent/gensoc/blob/main/public/homepage/vice_ganda.jpg?raw=true"
           name="Vice Ganda"
           description="Filipino Entertainer"
           message="“First I believe must educate themselves. Everyone must be able understand what is LGBTQIA+, what kind of people they are, because if you don't understand the person, then you don't fully embrace his/her totality.”"
