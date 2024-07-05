@@ -121,15 +121,26 @@ function Relationship() {
         className="education-banner"
         px={paddingResponsive}
         py="5rem"
-        gap="xl"
+        gap="2.5rem"
       >
-        <Group grow gap="xl">
-          <Box className="education-banner-image" w="50%">
-            <AspectRatio ratio={16 / 9} w="100%">
-              <Image src="https://img.freepik.com/premium-photo/tired-mom-watches-video-tablet-ironing-things-her-son-with-smartphone-too_73664-1053.jpg?w=740" />
-            </AspectRatio>
-          </Box>
-          {width > 700 && (
+        <Stack>
+          <Group grow gap="xl">
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://img.freepik.com/premium-photo/tired-mom-watches-video-tablet-ironing-things-her-son-with-smartphone-too_73664-1053.jpg?w=740" />
+              </AspectRatio>
+            </Box>
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  A woman in a heterosexual relationship takes on most household
+                  chores despite working full-time due to societal norms,
+                  leading to resentment and stress in the relationship.
+                </Text>
+              </Center>
+            )}
+          </Group>
+          {width <= 700 && (
             <Center>
               <Text ta="center">
                 A woman in a heterosexual relationship takes on most household
@@ -138,16 +149,63 @@ function Relationship() {
               </Text>
             </Center>
           )}
-        </Group>
-        {width <= 700 && (
-          <Center>
-            <Text ta="center">
-              A woman in a heterosexual relationship takes on most household
-              chores despite working full-time due to societal norms, leading to
-              resentment and stress in the relationship.
-            </Text>
-          </Center>
-        )}
+        </Stack>
+
+        <Stack>
+          <Group grow gap="xl">
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  A same-sex couple faces legal challenges in adopting a child
+                  because their relationship is not legally recognized, leading
+                  to stress and feeling unsupported by society.
+                </Text>
+              </Center>
+            )}
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://img.freepik.com/free-photo/asian-gay-couple-kissing-bed-home-young-asian-lgbtq-men-happy-relax-rest-together-spend-romantic-time-after-wake-up-bedroom-home-morning_7861-1969.jpg?w=900&t=st=1720173050~exp=1720173650~hmac=ff09f9a421d752d23ccc27ae1ba162116cd0c904dcfc00cb870be6030703ade9" />
+              </AspectRatio>
+            </Box>
+          </Group>
+          {width <= 700 && (
+            <Center>
+              <Text ta="center">
+                A same-sex couple faces legal challenges in adopting a child
+                because their relationship is not legally recognized, leading to
+                stress and feeling unsupported by society.
+              </Text>
+            </Center>
+          )}
+        </Stack>
+
+        <Stack>
+          <Group grow gap="xl">
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://img.freepik.com/free-photo/young-hispanic-man-suffering-headache-sitting-table-dinning-room_839833-26330.jpg?w=900&t=st=1720173151~exp=1720173751~hmac=b5ff874f122dd9ecd225791f469317db4981f048689468b8c1b6d1b9b78cbaaa" />
+              </AspectRatio>
+            </Box>
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  A man hides his emotional struggles because of the expectation
+                  to be stoic, causing communication issues and disconnection
+                  with his partner.
+                </Text>
+              </Center>
+            )}
+          </Group>
+          {width <= 700 && (
+            <Center>
+              <Text ta="center">
+                A man hides his emotional struggles because of the expectation
+                to be stoic, causing communication issues and disconnection with
+                his partner.
+              </Text>
+            </Center>
+          )}
+        </Stack>
       </Stack>
 
       <Stack px={paddingResponsive} py="4rem">

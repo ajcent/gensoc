@@ -51,7 +51,13 @@ function NavigationBar() {
       </List.Item>
 
       <List.Item visibleFrom="md">
-        <Button variant="filled" color="black">
+        <Button
+          variant="filled"
+          color="black"
+          onClick={() =>
+            window.open("https://www.unwomen.org/en/get-involved", "_blank")
+          }
+        >
           Act Now
         </Button>
       </List.Item>

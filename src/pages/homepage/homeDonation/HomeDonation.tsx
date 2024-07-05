@@ -52,7 +52,12 @@ function HomeDonation() {
                   color="blue"
                   miw="fit-content"
                 >
-                  <Button rightSection={<IoSend size={16} />}>
+                  <Button
+                    rightSection={<IoSend size={16} />}
+                    onClick={() =>
+                      window.open("https://donate.unwomen.org/en", "_blank")
+                    }
+                  >
                     <Text tt="uppercase" fw={700}>
                       Donate
                     </Text>

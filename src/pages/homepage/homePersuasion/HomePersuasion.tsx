@@ -57,7 +57,13 @@ function HomePersuasion() {
                 component="div"
                 className="persuation-item__overlay"
                 pos="absolute"
-              ></Box>
+              >
+                <Image
+                  display="inline-block"
+                  height="60%"
+                  src="https://github.com/ajcent/gensoc/blob/main/public/homepage/Organizations/GirlUp/girlup_overlay.png?raw=true"
+                />
+              </Box>
             </Box>
           </Stack>
 

@@ -119,15 +119,28 @@ function Culture() {
         className="education-banner"
         px={paddingResponsive}
         py="5rem"
-        gap="xl"
+        gap="2.5rem"
       >
-        <Group grow gap="xl">
-          <Box className="education-banner-image" w="50%">
-            <AspectRatio ratio={16 / 9} w="100%">
-              <Image src="https://images.unsplash.com/photo-1605816789011-ec492509c31d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-            </AspectRatio>
-          </Box>
-          {width > 700 && (
+        <Stack>
+          <Group grow gap="xl">
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://images.unsplash.com/photo-1605816789011-ec492509c31d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+              </AspectRatio>
+            </Box>
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  LGBTQ Pride Month in June commemorates the struggle for civil
+                  rights and celebrates community accomplishments. Originating
+                  in 1924 with Henry Gerber's Society for Human Rights, the
+                  movement gained momentum following the 1969 raid on the
+                  Stonewall Inn in NYC.
+                </Text>
+              </Center>
+            )}
+          </Group>
+          {width <= 700 && (
             <Center>
               <Text ta="center">
                 LGBTQ Pride Month in June commemorates the struggle for civil
@@ -138,16 +151,37 @@ function Culture() {
               </Text>
             </Center>
           )}
-        </Group>
-        {width <= 700 && (
-          <Center>
-            <Text ta="center">
-              A woman in a heterosexual relationship takes on most household
-              chores despite working full-time due to societal norms, leading to
-              resentment and stress in the relationship.
-            </Text>
-          </Center>
-        )}
+        </Stack>
+
+        <Stack>
+          <Group grow gap="xl">
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  The Seoul Queer Culture Festival is a yearly event in modern
+                  Korea focused on LGBT rights. It features a pride parade and
+                  film festival activities. Lasting for one to two weeks, the
+                  festival typically occurs from late May to early June.
+                </Text>
+              </Center>
+            )}
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://www.gaytravel4u.com/wp-content/uploads/2018/02/Seoul-Queer-Culture-Festival-and-Pride-Parade-2.jpg" />
+              </AspectRatio>
+            </Box>
+          </Group>
+          {width <= 700 && (
+            <Center>
+              <Text ta="center">
+                The Seoul Queer Culture Festival is a yearly event in modern
+                Korea focused on LGBT rights. It features a pride parade and
+                film festival activities. Lasting for one to two weeks, the
+                festival typically occurs from late May to early June.
+              </Text>
+            </Center>
+          )}
+        </Stack>
       </Stack>
 
       <Stack px={paddingResponsive} py="4rem">
