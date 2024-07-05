@@ -72,7 +72,7 @@ function Politics() {
                   Norms and Stereotypes
                 </Text>
                 <Center>
-                  <Text ta="center" opacity={0.7}>
+                  <Text ta="center">
                     Traditional gender roles often discourage women and
                     non-binary individuals from pursuing political careers,
                     reinforcing the idea that politics is a male domain.
@@ -89,7 +89,7 @@ function Politics() {
                   Harassment
                 </Text>
                 <Center>
-                  <Text ta="center" opacity={0.7}>
+                  <Text ta="center">
                     Women and gender minorities frequently face discrimination
                     in political environments, deterring them from participating
                     fully.
@@ -106,7 +106,7 @@ function Politics() {
                   Structural Barriers
                 </Text>
                 <Center>
-                  <Text ta="center" opacity={0.7}>
+                  <Text ta="center">
                     Lack of access to education, mentorship, and resources can
                     impede the political aspirations of marginalized genders.
                   </Text>
@@ -122,7 +122,7 @@ function Politics() {
                   Media Representation
                 </Text>
                 <Center>
-                  <Text ta="center" opacity={0.7}>
+                  <Text ta="center">
                     Media often portrays political leaders in a gender-biased
                     manner, influencing public perception and discouraging
                     diverse participation.
@@ -181,8 +181,8 @@ function Politics() {
         </Center>
         <Box component="div" className="politics-needs">
           <IconMessage
-            subheading="Unequal Opportunity"
-            content="Inclusion of gender perspectives in curriculum and teaching methods."
+            subheading="Challenge the Bias"
+            content="Educate the public and media to break stereotypes that discourage women in politics."
             icon={<FaBalanceScale size={30} />}
           />
           <IconMessage
@@ -191,13 +191,13 @@ function Politics() {
             icon={<FaBalanceScale size={30} />}
           />
           <IconMessage
-            subheading="Policies and Practices"
-            content="Promote gender equality, address stereotypes, and ensure all students have a fair chance to thrive academically and socially."
+            subheading="Change the Campaign Culture"
+            content="Focus on policies and respectful debate to make politics more attractive to women."
             icon={<FaBalanceScale size={30} />}
           />
           <IconMessage
-            subheading="Gender-Inclusive Approach"
-            content="Fosters a more equitable society by empowering individuals to break barriers and contribute fully to their communities."
+            subheading="Redefine Leadership"
+            content="Challenge traditional views of masculinity and promote women's leadership and intellectual qualities."
             icon={<FaBalanceScale size={30} />}
           />
         </Box>

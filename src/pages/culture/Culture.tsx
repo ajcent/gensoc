@@ -1,3 +1,5 @@
+import "./Culture.css";
+
 import { Paper } from "@mantine/core";
 import MainImage from "../../components/mainImage/MainImage";
 

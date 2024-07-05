@@ -103,12 +103,13 @@ function Education() {
             <Center h="100%">
               <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
                 <Text size="xl" fw={500} ta="center">
-                  Historical Legacies
+                  Access to Education
                 </Text>
                 <Center>
                   <Text ta="center">
-                    Long-standing societal biases and inequalities continue to
-                    influence current attitudes and structures.
+                    Girls often face barriers like early marriage and domestic
+                    duties, which limit their school attendance compared to
+                    boys.
                   </Text>
                 </Center>
               </Stack>
@@ -119,12 +120,13 @@ function Education() {
             <Center h="100%">
               <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
                 <Text size="xl" fw={500} ta="center">
-                  Historical Legacies
+                  Quality of Education
                 </Text>
                 <Center>
                   <Text ta="center">
-                    Long-standing societal biases and inequalities continue to
-                    influence current attitudes and structures.
+                    Educational materials and teaching can be biased towards
+                    boys, affecting learning outcomes for girls. Efforts are
+                    being made to create gender-sensitive curricula.
                   </Text>
                 </Center>
               </Stack>
@@ -135,12 +137,13 @@ function Education() {
             <Center h="100%">
               <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
                 <Text size="xl" fw={500} ta="center">
-                  Historical Legacies
+                  Exclusive Genders
                 </Text>
                 <Center>
                   <Text ta="center">
-                    Long-standing societal biases and inequalities continue to
-                    influence current attitudes and structures.
+                    Non-binary and transgender students often face
+                    discrimination in schools. Inclusive policies are needed to
+                    support them.
                   </Text>
                 </Center>
               </Stack>
