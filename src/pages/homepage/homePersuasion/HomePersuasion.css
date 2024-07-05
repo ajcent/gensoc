@@ -10,6 +10,7 @@
 }
 
 .persuation-item__overlay {
+  opacity: 0;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -19,6 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: opacity 250ms ease;
 }
 
 .persuation-grid__item__stack {
@@ -43,6 +46,10 @@
     rgba(22, 22, 22, 0.053658963585434205) 30%,
     rgba(22, 22, 22, 0) 69%
   );
+}
+
+.persuation-item:hover .persuation-item__overlay {
+  opacity: 1;
 }
 
 @media (max-width: 600px) {
