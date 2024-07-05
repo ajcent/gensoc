@@ -40,12 +40,12 @@ function Education() {
       <Center pos="relative" px={paddingResponsive} pt="5rem" w="100%">
         <Group w="100%" justify="center">
           <HoverCard
-            src="https://th.bing.com/th/id/OIP.3Jq-GDG5pNl-MTl3QhieNwHaE7?rs=1&pid=ImgDetMain"
+            src="https://img-s1.onedio.com/id-63bd868a6f928ae25aad24b6/rev-0/raw/s-3ca045e3dab43a4c866b1cee2a2e58b7770d82d6.jpg"
             header="Oprah Winfrey"
             content="“Education is the key to unlocking the world, a passport to freedom.”"
           />
           <HoverCard
-            src="https://th.bing.com/th/id/OIP.3Jq-GDG5pNl-MTl3QhieNwHaE7?rs=1&pid=ImgDetMain"
+            src="https://legacy.senate.gov.ph/photo_release/2023/1122_06.jpg"
             header="Pia Cayetano"
             content="“Gender equality in education is not just about fairness, it is about empowering half of our population to contribute fully to society.”"
           />
@@ -86,6 +86,69 @@ function Education() {
         </Center>
       </Stack>
 
+      <Stack className="education-carousel">
+        <Carousel
+          withControls={false}
+          draggable={false}
+          withIndicators
+          height="15rem"
+          w="100%"
+          plugins={[autoplay.current]}
+          onMouseEnter={autoplay.current.stop}
+          onMouseLeave={autoplay.current.reset}
+          loop
+          className="no-select"
+        >
+          <Carousel.Slide c="white">
+            <Center h="100%">
+              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
+                <Text size="xl" fw={500} ta="center">
+                  Historical Legacies
+                </Text>
+                <Center>
+                  <Text ta="center">
+                    Long-standing societal biases and inequalities continue to
+                    influence current attitudes and structures.
+                  </Text>
+                </Center>
+              </Stack>
+            </Center>
+          </Carousel.Slide>
+
+          <Carousel.Slide c="white">
+            <Center h="100%">
+              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
+                <Text size="xl" fw={500} ta="center">
+                  Historical Legacies
+                </Text>
+                <Center>
+                  <Text ta="center">
+                    Long-standing societal biases and inequalities continue to
+                    influence current attitudes and structures.
+                  </Text>
+                </Center>
+              </Stack>
+            </Center>
+          </Carousel.Slide>
+
+          <Carousel.Slide c="white">
+            <Center h="100%">
+              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
+                <Text size="xl" fw={500} ta="center">
+                  Historical Legacies
+                </Text>
+                <Center>
+                  <Text ta="center">
+                    Long-standing societal biases and inequalities continue to
+                    influence current attitudes and structures.
+                  </Text>
+                </Center>
+              </Stack>
+            </Center>
+          </Carousel.Slide>
+        </Carousel>
+      </Stack>
+
       <Stack
         className="education-banner"
         px={paddingResponsive}
@@ -119,69 +182,6 @@ function Education() {
         )}
       </Stack>
 
-      <Stack className="education-carousel">
-        <Carousel
-          withControls={false}
-          draggable={false}
-          withIndicators
-          height="15rem"
-          w="100%"
-          plugins={[autoplay.current]}
-          onMouseEnter={autoplay.current.stop}
-          onMouseLeave={autoplay.current.reset}
-          loop
-          className="no-select"
-        >
-          <Carousel.Slide c="white">
-            <Center h="100%">
-              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
-                <Text size="xl" fw={500} ta="center">
-                  Historical Legacies
-                </Text>
-                <Center>
-                  <Text>
-                    Long-standing societal biases and inequalities continue to
-                    influence current attitudes and structures.
-                  </Text>
-                </Center>
-              </Stack>
-            </Center>
-          </Carousel.Slide>
-
-          <Carousel.Slide c="white">
-            <Center h="100%">
-              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
-                <Text size="xl" fw={500} ta="center">
-                  Historical Legacies
-                </Text>
-                <Center>
-                  <Text>
-                    Long-standing societal biases and inequalities continue to
-                    influence current attitudes and structures.
-                  </Text>
-                </Center>
-              </Stack>
-            </Center>
-          </Carousel.Slide>
-
-          <Carousel.Slide c="white">
-            <Center h="100%">
-              <Stack gap="4px" px={{ md: "5rem", base: "3rem" }}>
-                <Text size="xl" fw={500} ta="center">
-                  Historical Legacies
-                </Text>
-                <Center>
-                  <Text>
-                    Long-standing societal biases and inequalities continue to
-                    influence current attitudes and structures.
-                  </Text>
-                </Center>
-              </Stack>
-            </Center>
-          </Carousel.Slide>
-        </Carousel>
-      </Stack>
-
       <Stack px={paddingResponsive} py="4rem">
         <Center>
           <Text className="main-text-size" fw={500} pb="xs" tt="uppercase">
@@ -190,8 +190,8 @@ function Education() {
         </Center>
         <Box component="div" className="education-needs">
           <IconMessage
-            subheading="Lead by Example"
-            content="Challenge gender stereotypes and support gender equality in your everyday life. Encourage others to do the same."
+            subheading="Academic Opportunity"
+            content="Inclusion of gender perspectives in curriculum and teaching methods."
             icon={<FaBalanceScale size={30} />}
           />
           <IconMessage
