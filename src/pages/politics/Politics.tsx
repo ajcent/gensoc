@@ -143,7 +143,7 @@ function Politics() {
         <Group grow gap="xl">
           <Box className="education-banner-image" w="50%">
             <AspectRatio ratio={16 / 9} w="100%">
-              <Image src="public/politics/why.jpg" />
+              <Image src="https://github.com/ajcent/gensoc/blob/main/public/politics/why.jpg?raw=true" />
             </AspectRatio>
           </Box>
           {width > 700 && (
