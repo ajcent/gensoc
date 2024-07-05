@@ -40,14 +40,14 @@ function Relationship() {
       <Center pos="relative" px={paddingResponsive} py="5rem" w="100%">
         <Group w="100%" justify="center">
           <HoverCard
-            src="https://th.bing.com/th/id/OIP.EF0Azipwg8QfEjt8eamRlwHaEK?rs=1&pid=ImgDetMain"
-            header="Michelle Bachelet"
-            content="“For me, a better democracy is a democracy where women do not only have the right to vote and to elect but to be elected.”"
+            src="https://th.bing.com/th/id/R.59a790110e2c66c601c1257b4dd48fe0?rik=tLNw%2bWQ%2b7Jjv6A&riu=http%3a%2f%2fpopulationgrowth.org%2fwp-content%2fuploads%2f2022%2f12%2fRiane-Eisler-Purple-Portrait-1024x685.png&ehk=4ayUWPfbTPTO%2bVUGWmBxdYNgVa89SVu3zueOVhG8FUM%3d&risl=&pid=ImgRaw&r=0"
+            header="Riane Eisler"
+            content="“LOVE has no gender, no religion, neither does it come with any conditions. In this world full of conditions, try to LOVE someone.”"
           />
           <HoverCard
-            src="https://th.bing.com/th/id/R.1a652ff9a07e8597d5e552968463bd60?rik=VSgWwh5HMrMcvQ&riu=http%3a%2f%2fkitschmix.com%2fwp-content%2fuploads%2f2015%2f11%2fBarbara-Gittings-activist.jpg&ehk=5xB%2fexl8euP6uh41J9rAfVJXKUMZOA1ECpU4yPRMKDQ%3d&risl=&pid=ImgRaw&r=0"
-            header="Barbara Gittings"
-            content="“Equality means more than passing laws. The struggle is really won in the hearts and minds of the community, where it really counts.”"
+            src="public/relationship/akash.jpg"
+            header="Akash Sarka"
+            content="“Gender relationships, challenging for many, determine whether a society leans towards domination or partnership in all its relations.”"
           />
         </Group>
       </Center>
