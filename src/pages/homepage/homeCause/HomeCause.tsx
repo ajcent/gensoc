@@ -27,7 +27,7 @@ function HomeCause() {
 
             <Center>
               <Text className="sub-text-size" opacity={0.7}>
-                The Reason Behind It
+                The Reason Behind
               </Text>
             </Center>
           </Stack>

@@ -22,7 +22,7 @@ function HomePersuasion() {
             </Text>
             <Center>
               <Text className="sub-text-size" opacity={0.7}>
-                Choose The Organization That Truly Acts
+                Choose Among The Organization
               </Text>
             </Center>
           </Stack>

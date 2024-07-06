@@ -17,7 +17,7 @@ function BrandName(props: BrandNameProps) {
   }, [pathname]);
 
   return (
-    <Link to="/">
+    <Link to="/" className="link">
       <Text
         size={size}
         id="brand-name"

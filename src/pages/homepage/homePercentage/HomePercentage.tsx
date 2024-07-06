@@ -23,7 +23,7 @@ function HomePercentage() {
     >
       <Stack gap={0}>
         <Center className="home-percentage__content__wrapper" mb="-7rem">
-          <Text className="home-percentage__content" size="xl">
+          <Text className="home-percentage__content" size="md">
             Is the gender pay gap or {width <= 780 && <Box component="br" />}{" "}
             annual average salary of $15,457
           </Text>

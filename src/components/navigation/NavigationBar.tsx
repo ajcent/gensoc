@@ -13,16 +13,14 @@ function NavigationBar() {
   return (
     <List id="navigation" px={paddingResponsive} py="xs">
       <List.Item>
-        <Link to="/" className="link">
-          <Flex align="center">
-            <Image
-              src="https://github.com/ajcent/gensoc/blob/main/public/homepage/logo.png?raw=true"
-              w="35px"
-              mr="md"
-            />
-            <BrandName size="md" />
-          </Flex>
-        </Link>
+        <Flex align="center">
+          <Image
+            src="https://github.com/ajcent/gensoc/blob/main/public/homepage/logo.png?raw=true"
+            w="35px"
+            mr="md"
+          />
+          <BrandName size="md" />
+        </Flex>
       </List.Item>
       <List.Item visibleFrom="md">
         <Link to="education" className="link">

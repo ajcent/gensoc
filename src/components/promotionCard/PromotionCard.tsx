@@ -13,9 +13,11 @@ function PromotionCard(props: PromotionCardProps) {
 
   return (
     <Card className="card">
-      <Stack h="100%" justify="space-between">
-        <Text className="text">{message}</Text>
-        <Flex align="center" gap="xs">
+      <Stack h="100%" justify="space-between" gap="lg">
+        <Text className="text" size="md">
+          {message}
+        </Text>
+        <Flex align="center" gap="md">
           <Avatar variant="filled" radius="xl" size="lg" src={src} />
           <Stack gap="0">
             <Text className="text" fw={600}>

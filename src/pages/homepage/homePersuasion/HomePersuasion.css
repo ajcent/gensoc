@@ -61,4 +61,8 @@
   #home-persuasion {
     padding: 2.5rem 0.5rem;
   }
+
+  .persuation-item .persuation-item__overlay {
+    opacity: 1;
+  }
 }
