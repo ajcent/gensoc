@@ -197,9 +197,7 @@ function Culture() {
                   The gay rights movement began with the Society for Human
                   Rights (SHR), founded in 1924. The police disbanded SHR in
                   1925, along with its newsletter, "Friendship and Freedom," the
-                  first US gay-interest newsletter. In 1969, Stonewall Inn
-                  patrons protested for their rights despite a police raid
-                  driven by a campaign to shut down gay bars in New York City.
+                  first US gay-interest newsletter.
                 </Text>
               </Center>
             )}
@@ -210,9 +208,7 @@ function Culture() {
                 The gay rights movement began with the Society for Human Rights
                 (SHR), founded in 1924. The police disbanded SHR in 1925, along
                 with its newsletter, "Friendship and Freedom," the first US
-                gay-interest newsletter. In 1969, Stonewall Inn patrons
-                protested for their rights despite a police raid driven by a
-                campaign to shut down gay bars in New York City.
+                gay-interest newsletter.
               </Text>
             </Center>
           )}
