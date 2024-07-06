@@ -1,6 +1,6 @@
 import "./HoverCard.css";
 import { AspectRatio, BackgroundImage, Box, Text } from "@mantine/core";
-import { FaExpandAlt } from "react-icons/fa";
+import { IoMdArrowRoundUp } from "react-icons/io";
 
 interface HoverCardProps {
   src: string;
@@ -15,8 +15,8 @@ function HoverCard(props: HoverCardProps) {
     <AspectRatio className="hovercard" ratio={16 / 9}>
       <BackgroundImage src={src}>
         <Box component="div" className="hovercard-icon">
-          <FaExpandAlt
-            size={20}
+          <IoMdArrowRoundUp
+            size={22}
             color="white"
             className="hovercard-icon__icon"
           />
