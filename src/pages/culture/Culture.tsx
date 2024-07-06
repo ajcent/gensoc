@@ -183,6 +183,40 @@ function Culture() {
             </Center>
           )}
         </Stack>
+
+        <Stack>
+          <Group grow gap="xl">
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://img.freepik.com/premium-psd/honoring-lgbtqia-mockup_23-2151498745.jpg?w=740" />
+              </AspectRatio>
+            </Box>
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  The gay rights movement began with the Society for Human
+                  Rights (SHR), founded in 1924. The police disbanded SHR in
+                  1925, along with its newsletter, "Friendship and Freedom," the
+                  first US gay-interest newsletter. In 1969, Stonewall Inn
+                  patrons protested for their rights despite a police raid
+                  driven by a campaign to shut down gay bars in New York City.
+                </Text>
+              </Center>
+            )}
+          </Group>
+          {width <= 700 && (
+            <Center>
+              <Text ta="center">
+                The gay rights movement began with the Society for Human Rights
+                (SHR), founded in 1924. The police disbanded SHR in 1925, along
+                with its newsletter, "Friendship and Freedom," the first US
+                gay-interest newsletter. In 1969, Stonewall Inn patrons
+                protested for their rights despite a police raid driven by a
+                campaign to shut down gay bars in New York City.
+              </Text>
+            </Center>
+          )}
+        </Stack>
       </Stack>
 
       <Stack px={paddingResponsive} py="4rem">
