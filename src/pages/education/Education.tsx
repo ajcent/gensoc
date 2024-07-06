@@ -35,7 +35,7 @@ function Education() {
       <MainImage
         header="Gender In Education"
         content="How gender identity and norms affect access to, participation in, and outcomes of educational opportunities"
-        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://img.freepik.com/free-photo/picture-showing-children-violence-school_329181-14307.jpg?t=st=1720270047~exp=1720273647~hmac=59ccd0efa9053b1bce4cd2ca39c12b944cc84696579e2a2039672bbd2bc1fa95&w=740"
       />
 
       <Center
