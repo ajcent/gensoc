@@ -156,15 +156,26 @@ function Education() {
         className="education-banner"
         px={paddingResponsive}
         py="5rem"
-        gap="xl"
+        gap="2.5rem"
       >
-        <Group grow gap="xl">
-          <Box className="education-banner-image" w="50%">
-            <AspectRatio ratio={16 / 9} w="100%">
-              <Image src="https://github.com/ajcent/gensoc/blob/main/public/education/education_equality.jpg?raw=true" />
-            </AspectRatio>
-          </Box>
-          {width > 700 && (
+        <Stack>
+          <Group grow gap="xl">
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://github.com/ajcent/gensoc/blob/main/public/education/education_equality.jpg?raw=true" />
+              </AspectRatio>
+            </Box>
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  Gender disparity in education persists due to various factors
+                  such as societal norms, and discrimination based on gender
+                  identity and sexual orientation.
+                </Text>
+              </Center>
+            )}
+          </Group>
+          {width <= 700 && (
             <Center>
               <Text ta="center">
                 Gender disparity in education persists due to various factors
@@ -173,16 +184,37 @@ function Education() {
               </Text>
             </Center>
           )}
-        </Group>
-        {width <= 700 && (
-          <Center>
-            <Text ta="center">
-              Gender disparity in education persists due to various factors such
-              as societal norms, and discrimination based on gender identity and
-              sexual orientation.
-            </Text>
-          </Center>
-        )}
+        </Stack>
+
+        <Stack>
+          <Group grow gap="xl">
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  Education is a fundamental right, yet millions of girls and
+                  marginalized groups face barriers worldwide. Advocacy for
+                  gender and development calls for policies promoting equality,
+                  addressing stereotypes, and ensuring all students can thrive.
+                </Text>
+              </Center>
+            )}
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://plus.unsplash.com/premium_photo-1682284353484-4e16001c58eb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+              </AspectRatio>
+            </Box>
+          </Group>
+          {width <= 700 && (
+            <Center>
+              <Text ta="center">
+                Education is a fundamental right, yet millions of girls and
+                marginalized groups face barriers worldwide. Advocacy for gender
+                and development calls for policies promoting equality,
+                addressing stereotypes, and ensuring all students can thrive.
+              </Text>
+            </Center>
+          )}
+        </Stack>
       </Stack>
 
       <Stack px={paddingResponsive} py="4rem">

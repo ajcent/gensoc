@@ -141,9 +141,10 @@ function Workplace() {
           {width <= 700 && (
             <Center>
               <Text ta="center">
-                A woman in a heterosexual relationship takes on most household
-                chores despite working full-time due to societal norms, leading
-                to resentment and stress in the relationship.
+                Women often earn less than men for equivalent work, primarily
+                due to discrimination and job segregation practices in various
+                industries. This highlights persistent challenges in achieving
+                workplace pay equity and gender equality.
               </Text>
             </Center>
           )}
