@@ -139,15 +139,29 @@ function Politics() {
         className="education-banner"
         px={paddingResponsive}
         py="5rem"
-        gap="xl"
+        gap="2.5rem"
       >
-        <Group grow gap="xl">
-          <Box className="education-banner-image" w="50%">
-            <AspectRatio ratio={16 / 9} w="100%">
-              <Image src="https://github.com/ajcent/gensoc/blob/main/public/politics/why.jpg?raw=true" />
-            </AspectRatio>
-          </Box>
-          {width > 700 && (
+        <Stack>
+          <Group grow gap="xl">
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://github.com/ajcent/gensoc/blob/main/public/politics/why.jpg?raw=true" />
+              </AspectRatio>
+            </Box>
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  The political sphere has long been dominated by men, leading
+                  to policies and governance that often neglect the needs and
+                  rights of other genders. This imbalance perpetuates inequality
+                  and hinders progress. The importance of advocacy for gender
+                  equality arises in politics in hopes of ensuring diverse
+                  perspectives in decision-making.
+                </Text>
+              </Center>
+            )}
+          </Group>
+          {width <= 700 && (
             <Center>
               <Text ta="center">
                 The political sphere has long been dominated by men, leading to
@@ -159,19 +173,39 @@ function Politics() {
               </Text>
             </Center>
           )}
-        </Group>
-        {width <= 700 && (
-          <Center>
-            <Text ta="center">
-              The political sphere has long been dominated by men, leading to
-              policies and governance that often neglect the needs and rights of
-              other genders. This imbalance perpetuates inequality and hinders
-              progress. The importance of advocacy for gender equality arises in
-              politics in hopes of ensuring diverse perspectives in
-              decision-making.
-            </Text>
-          </Center>
-        )}
+        </Stack>
+
+        <Stack>
+          <Group grow gap="xl">
+            {width > 700 && (
+              <Center>
+                <Text ta="center">
+                  The Women's Suffrage Movement was a campaign advocating for
+                  women's right to vote, which gained momentum in the late 19th
+                  and early 20th centuries. It culminated in the passage of laws
+                  granting women the right to participate in elections, marking
+                  a significant milestone in the fight for gender equality.
+                </Text>
+              </Center>
+            )}
+            <Box className="education-banner-image" w="50%">
+              <AspectRatio ratio={16 / 9} w="100%">
+                <Image src="https://images.unsplash.com/photo-1494172961521-33799ddd43a5?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+              </AspectRatio>
+            </Box>
+          </Group>
+          {width <= 700 && (
+            <Center>
+              <Text ta="center">
+                The Women's Suffrage Movement was a campaign advocating for
+                women's right to vote, which gained momentum in the late 19th
+                and early 20th centuries. It culminated in the passage of laws
+                granting women the right to participate in elections, marking a
+                significant milestone in the fight for gender equality.
+              </Text>
+            </Center>
+          )}
+        </Stack>
       </Stack>
 
       <Stack px={paddingResponsive} py="4rem">
