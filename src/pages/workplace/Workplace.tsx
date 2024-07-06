@@ -32,6 +32,7 @@ function Workplace() {
     >
       <MainImage
         header="Gender In Workplace"
+        content="Impact of gender on employment opportunities, wage equality, career advancement, and work-life balance"
         src="https://www.thecultureconcept.com/wp-content/uploads/2017/02/Hidden-Figures-8.jpg"
       />
 

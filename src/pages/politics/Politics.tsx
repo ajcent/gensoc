@@ -34,6 +34,7 @@ function Politics() {
     >
       <MainImage
         header="Gender In Politics"
+        content="Roles and representation of different genders in political processes, decision-making, and leadership positions."
         src="https://images.unsplash.com/photo-1633643333515-ef3727546bd4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
