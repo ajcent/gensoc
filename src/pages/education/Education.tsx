@@ -38,7 +38,13 @@ function Education() {
         src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />
 
-      <Center pos="relative" px={paddingResponsive} pt="5rem" w="100%">
+      <Center
+        pos="relative"
+        px={paddingResponsive}
+        pt="5rem"
+        pb="2rem"
+        w="100%"
+      >
         <Group w="100%" justify="center">
           <HoverCard
             src="https://img-s1.onedio.com/id-63bd868a6f928ae25aad24b6/rev-0/raw/s-3ca045e3dab43a4c866b1cee2a2e58b7770d82d6.jpg"
@@ -58,8 +64,13 @@ function Education() {
         px={paddingResponsive}
         style={{ overflow: "hidden", position: "relative" }}
         gap="xl"
-        opacity={0.7}
       >
+        <Center>
+          <Text className="main-text-size" fw={500} tt="uppercase">
+            It Is Based
+          </Text>
+        </Center>
+
         <BarChart
           w="content"
           h={300}
@@ -81,8 +92,15 @@ function Education() {
 
         <Center>
           <Text ta="center">
-            LGBTQ+ students frequently hearing homophobic comments from staff
-            and negative remarks about gender expression.
+            <Text opacity={0.7} component="span">
+              LGBTQ+ students frequently hearing
+            </Text>{" "}
+            <Text inherit component="span" fw={700}>
+              homophobic comments
+            </Text>{" "}
+            <Text opacity={0.7} component="span">
+              from staff and negative remarks about gender expression.
+            </Text>
           </Text>
         </Center>
       </Stack>
