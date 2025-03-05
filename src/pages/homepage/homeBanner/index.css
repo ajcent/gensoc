@@ -1,0 +1,13 @@
+.banner {
+  background-color: #e50046;
+  color: white;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+}
+
+.banner-link {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
